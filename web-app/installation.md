@@ -1,7 +1,34 @@
 # Docker Installation
 
+If you have successfully installed the API, you have to install the web-app.
+Move to the parentdirectory of your API-Installation by typing
 
-_More information will follow shortly_
+```bash
+   $ cd ..
+   ```
+, clone the repo of Human Connection by typing
+
+ ```bash
+   $ git clone https://github.com/Human-Connection/WebApp.git
+
+   ```
+and change to its directory with
+
+```bash
+   $ cd WebApp
+   ```
+.
+The following command, again, needs root-privileges, on Linux-Systems we strongly recommend the use of sudo, on Windows-Systems you will need admin-rights or you should use the LSS (Linux Sub System).
+
+Determine the web-app of Human Connection by running 
+
+```bash
+$ sudo docker-compose up
+```
+After this is done, reload your installation in your browser: [http://localhost:3030](http://localhost:3030), contributions at [http://localhost:3030/contributions](http://localhost:3030/contributions) or users at [http://localhost:3030/users](http://localhost:3030/users).
+
+Congratulations! Now your web-app of Human Connection is running too. :-)
+
 
 # Local Installation
 
