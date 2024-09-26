@@ -26,9 +26,8 @@ Determine now the installed version, running
 ```bash
 $ sudo docker-compose up --build
 ```
-.
-
-Now, your API should be running at [http://localhost:3030](http://localhost:3030) and you can see some contributions at [http://localhost:3030/contributions](http://localhost:3030/contributions).
+. You see no more changes in your terminal-window?
+Congratulations: Your server is now running at [http://localhost:3030](http://localhost:3030) which you can load in your browser. Some contributions wait for you at [http://localhost:3030/contributions](http://localhost:3030/contributions).
 
 For debugging you can run:
 
@@ -40,9 +39,9 @@ And debug your app with [Chrome Dev Tools](chrome://inspect).
 
 ### Setting up the database seeder for local development 
 
-Change configuration in `config/docker/local-development.json` or `config/docker/local.json` and rerun `docker-compose up --build`.
+Change the configuration in `config/local-development.json` or `config/local.json` and rerun `docker-compose up --build`.
 
-If both the files do no exist create a `config/local.json` and copy the content of `config/local.example.json` and rerun `docker-compose up --build`.
+If both files do no exist, create a `config/local.json` , copy the content of `config/local.example.json` into it and rerun `docker-compose up --build`.
 
 Reference : https://github.com/lorenwest/node-config/wiki/Configuration-Files
 
